@@ -9,7 +9,15 @@ To use this application you will need:
     An account with permissions to push API based changes to network
 
 # Install and Setup
-1.	Install Python on windows or linux machine
-2.	Generate API Key from Meraki dashboard to send & receive API via particular account
-3.	Configure API Based script for third party ipsec tunnels
-4.	Test failover of tunnels using API Script
+1. Clone the code to local machine.
+    git clone https://github.com/ccie29824/meraki_ipsec_failover.git
+    cd meraki_ipsec_failover
+
+2. Setup Python Virtual Environment (requires Python 3.7+)
+    python3.7 -m venv venv
+    source venv/bin/activate
+    pip3 install -r requirements.txt
+
+3.	Generate API Key from Meraki dashboard to send & receive API via particular account
+4.	Configure API Based script for third party ipsec tunnels
+5.	Test failover of tunnels using API Script
